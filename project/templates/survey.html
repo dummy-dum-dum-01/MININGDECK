@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+
+<head>
+
+    <!-- Basic metas
+    ======================================== -->
+    <meta charset="utf-8">
+    <meta name="author" content="Axilweb">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile specific metas
+    ======================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Title
+    ======================================== -->
+    <title>MiningDeck</title>
+
+    <!-- links for favicon
+    ======================================== -->
+    <link rel="shortcut icon" href='{{url_for("static", filename="icon/favicon.ico")}}' type="image/x-icon">
+    <link rel="icon" href='{{url_for("static", filename="icon/favicon.ico")}}' type="image/x-icon">
+
+    <!-- Icon fonts
+    ======================================== -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/basicons.css")}}'>
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/crypto-fintech.css")}}'>
+
+    <!-- css links
+    ======================================== -->
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/vendor/bootstrap.min.css")}}'>
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/vendor/slick.css")}}'>
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/vendor/slick-theme.css")}}'>
+
+    <!-- Magnific popup -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/vendor/magnific-popup.css")}}'>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/mainf700.css")}}'>
+
+    <!-- Responsive styling -->
+    <link rel="stylesheet" type="text/css" href='{{url_for("static", filename="css/responsivef700.css")}}'>
+
+</head>
+
+
+<!-- body starts
+============================================ -->
+
+<body>
+
+    <!-- Preloader -->
+    <div class="o-preloader">
+        <div class="o-preloader_inner"></div>
+    </div>
+
+    <!-- Background images -->
+    <img class="banner-poly-bg banner-poly-bg-1" src='{{url_for("static", filename="images/banner/banner-polygon-1.png")}}' alt="banner polygon">
+    <img class="banner-poly-bg banner-poly-bg-2" src='{{url_for("static", filename="images/banner/banner-polygon-2.png")}}' alt="banner polygon">
+    <div class="banner-poly-container banner-poly-bg banner-poly-bg-3">
+        <img class="" src='{{url_for("static", filename="images/banner/banner-polygon-3.png")}}' alt="banner polygon">
+        <span class="sparks spark-1 ripple-out"></span>
+        <span class="sparks spark-2 ripple-out"></span>
+        <span class="sparks spark-3 ripple-out"></span>
+        <span class="sparks spark-4 ripple-out"></span>
+        <span class="sparks spark-5 ripple-out"></span>
+    </div>
+
+    <!-- Body-overlay -->
+    <div class="body-overlay"></div>
+
+    <!-- navbar starts
+============================================ -->
+    <nav class="c-onepage-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand page-scroll" href="{{url_for('app.index')}}">
+                <img src='{{url_for("static", filename="images/brand-logo4.png")}}' alt="brand logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="toggler-icon-bar bar1"></span>
+                <span class="toggler-icon-bar bar2"></span>
+                <span class="toggler-icon-bar bar3"></span>
+            </button>
+            <!-- End of .navbar-toggler -->
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- End of .container -->
+    </nav>
+    <!-- End of .navbar -->
+
+    <div class="page-wrapper crypto-onepage">
+
+        <!--Survey and contact-->
+        <div id="contact" class="section c-onepage-contact">
+            <div class="container">
+                <div class="o-contact-block wow fadeIn">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="flip-container wow fadeIn">
+                                <div class="flipper">
+                                    <div class="o-form-content front">
+                                        <form method="POST" class="o-contact-form">
+                                            <h4 class="text-center">Take part in our Blockchain Survey</h4>
+                                            <h6>Help us by participating in our quick blockchain survey, 
+                                                we value your input and can asssure that this survey is submitted anonymously.</h6>
+                                            <div class="row form-group">
+                                                <div class="col-md-12 form-group">
+                                                    <p>1. What country are you from?</p>
+                                                    <input type="text" placeholder="Enter Country" name="country" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <p>2. Have you heard of the Blockchain or Cryptocurrencies before? (Yes/No)</p>
+                                                    <input type="text" placeholder="Enter Answer" name="heardof" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <p>3. Do you own or have you owned any Cryptocurrency?, If so please specify coin name.</p>
+                                                    <input type="text" placeholder="Enter Answer" name="owncrypto" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <p>4. Are you familiar with anyone (Friend/Family) that owns Bitcoin or any other Cryptocurrency? (Yes/No)</p>
+                                                    <input type="text" placeholder="Enter Answer" name="forf" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <p>5. Do you think Blockchain and Cryptocurrency is here to stay? (Yes/No)</p>
+                                                    <input type="text" placeholder="Enter Answer" name="doyouthink" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <p>6. What Blockchain platforms are you familiar with? (Eg. Kraken, Binance)</p>
+                                                    <input type="text" placeholder="Enter platform(s)" name="platform" required>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <textarea placeholder="Wnat do you think about Blockchain and cryptocurrencies?" name="message" required></textarea>
+                                                </div>
+                                                <div class="col-md-12 text-center form-group form-button">
+                                                    <button href="#" data-toggle="modal" data-target="#deets-modal" type="submit" class="btn form-button">SUBMIT SURVEY</button>
+                                                    <small>And earn your $10 in crypto gift-card</small>
+                                                </div>
+                                            </div>
+                                            <!-- End of .row -->
+                                        </form>
+                                        <!-- End of .o-contact-form -->
+                                    </div>
+                                    <!-- End of .o-form-content -->
+
+                                    <div class="back o-map-container">
+                                        <div id="map" class="o-map"></div>
+                                    </div>
+                                    <!-- o-map-content -->
+                                </div>
+                                <!-- End of .fliper -->
+                            </div>
+                            <!-- End of .flip-container -->
+                        </div>
+                        <!-- End of .col-md-3 -->
+                        <div class="col-lg-4">
+                            <div class="o-contact-info text-left">
+                                <h2>Contact Us</h2>
+                                <div class="o-c-info">
+                                    <a href="mailto:cryptominingdeck@gmail.com">
+                                        <i class="icon-Envelope3"></i>cryptominingdeck@gmail.com
+                                    </a>
+                                </div>
+                                <div class="o-c-info">
+                                    <a href="tel:+15305086033">
+                                        <i class="icon-Mobile"></i>+1 530 508 6033
+                                    </a>
+                                </div>
+
+                                <div class="o-c-info">
+                                    <i class="icon-Store3"></i>8159 Main Drive
+                                    <br>Brooklyn, NY 11225</div>
+                                <a href="https://www.google.com/maps/place/Main+St,+Brooklyn,+NY+11201,+USA/@40.7032606,-73.9928505,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a31142b2c19:0xa192819c77f4c7a5!8m2!3d40.7032606!4d-73.9906618" class="btn btn-small">
+                                    <i class="icon-Store"></i>VIEW MAP</a>
+                                <div class="o-follow-us">
+                                    Follow us :
+                                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                                        <i class="icon-Facebook"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                                        <i class="icon-Linkedin"></i>
+                                    </a>
+                                    <a href="https://www.medium.com" target="_blank" rel="noopener">
+                                        <i class="icon-Medium"></i>
+                                    </a>
+                                    <a href="https://www.twitter.com" target="_blank" rel="noopener">
+                                        <i class="icon-Twitter2"></i>
+                                    </a>
+                                </div>
+                                <!-- End of .o-follow-us -->
+                            </div>
+                            <!-- End of .contact-info -->
+                        </div>
+                        <!-- End of .col-md-3 -->
+                    </div>
+                    <!-- End of .row -->
+                </div>
+                <!-- End of .o-contact-block -->
+            </div>
+            <!-- End fo .container -->
+        </div>
+        <!--End Survey and Contact-->
+
+
+    </div>
+
+    <div class="modal fade o-terms-modal c-onepage-modal" id="deets-modal" tabindex="-1" role="dialog" aria-labelledby="deets-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-Cross3"></i>
+                </button>
+                <div id="contact" class="section c-onepage-contact">
+                    <div class="container">
+                        <div class="o-contact-block wow fadeIn">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="flip-container wow fadeIn">
+                                        <div class="flipper">
+                                            <div class="o-form-content front">
+                                                <form method="POST" class="o-contact-form">
+                                                    <h3 class="text-center">Redeem your $10 Crypto gift-card</h3>
+                                                    <h6>Thank you so much for participating in our survey, your input will go a long way in helping us deliver better services
+                                                        to our customers, and to show our appreciation please redeem your gift-card below with our partner company.
+                                                    </h6>
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12 text-center form-group form-button">
+                                                            <button href="" type="submit" class="btn form-button">REDEEM TO COINBASE</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+        <!-- Javascripts
+    ======================================= -->
+    <!-- jQuery -->
+    <script src='{{url_for("static", filename="js/vendor/jquery-3.2.1.min.js")}}'></script>
+    <script src='{{url_for("static", filename="js/vendor/jquery-migrate.min.js")}}'></script>
+    <!-- jQuery Easing Plugin -->
+    <script src='{{url_for("static", filename="js/vendor/easing-1.3.js")}}'></script>
+    <!-- Bootstrap js -->
+    <script src='{{url_for("static", filename="js/vendor/bootstrap.bundle.min.js")}}'></script>
+    <!-- font awesome -->
+    <script src='{{url_for("static", filename="js/vendor/fontawesome-all.min.js")}}'></script>
+    <!-- jQuery Countdown plugin -->
+    <script src='{{url_for("static", filename="js/vendor/jquery.countdown.min.js")}}'></script>
+    <!-- jQuery progressbar plugin -->
+    <script src='{{url_for("static", filename="js/vendor/jquery.waypoints.min.js")}}'></script>
+    <!-- Bootstrap Progressbar -->
+    <script src='{{url_for("static", filename="js/vendor/bootstrap-progressbar.min.js")}}'></script>
+    <!-- ImagesLoaded js -->
+    <script src='{{url_for("static", filename="js/vendor/imagesloaded.pkgd.min.js")}}'></script>
+    <!-- Slick carousel js -->
+    <script src='{{url_for("static", filename="js/vendor/slick.min.js")}}'></script>
+    <!-- Magnific popup -->
+    <script src='{{url_for("static", filename="js/vendor/jquery.magnific-popup.min.js")}}'></script>
+    <!-- Charts -->
+    <script src='{{url_for("static", filename="js/vendor/amcharts.min.js")}}'></script>
+    <script src='{{url_for("static", filename="js/vendor/pie.min.js")}}'></script>
+    <!-- Bitcoin -->
+    <script src='{{url_for("static", filename="js/vendor/widget.js")}}'></script>
+    <!-- wow js -->
+    <script src='{{url_for("static", filename="js/vendor/wow.min.js")}}'></script>
+    <!-- Custom js -->
+    <script src='{{url_for("static", filename="js/main.js")}}'></script>
+    <script>
+        (function(b,i,t,C,O,I,N) {
+          window.addEventListener('load',function() {
+            if(b.getElementById(C))return;
+            I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+            I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+          },false)
+        })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+      </script>
+    <!-- Google map -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Cn2XCz3_n_J57QSN_rw6gwtQDWQJ3MM&amp;callback=initMap">
+    </script>
+</body>
+</html>
