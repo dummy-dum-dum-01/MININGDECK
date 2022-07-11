@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'crypto-fintech';
+  src:  url('../fonts/crypto-fintech92ab.eot?c6dm6z');
+  src:  url('../fonts/crypto-fintech92ab.eot?c6dm6z#iefix') format('embedded-opentype'),
+    url('../fonts/crypto-fintech92ab.ttf?c6dm6z') format('truetype'),
+    url('../fonts/crypto-fintech92ab.woff?c6dm6z') format('woff'),
+    url('../fonts/crypto-fintech92ab.svg?c6dm6z#crypto-fintech') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'crypto-fintech' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-abacus:before {
+  content: "\e900";
+}
+.icon-api:before {
+  content: "\e901";
+}
+.icon-assets:before {
+  content: "\e902";
+}
+.icon-asymmetric-keys:before {
+  content: "\e903";
+}
+.icon-atm:before {
+  content: "\e904";
+}
+.icon-attorney:before {
+  content: "\e905";
+}
+.icon-b2b:before {
+  content: "\e906";
+}
+.icon-b2c:before {
+  content: "\e907";
+}
+.icon-balance:before {
+  content: "\e908";
+}
+.icon-bank:before {
+  content: "\e909";
+}
+.icon-big-data:before {
+  content: "\e90a";
+}
+.icon-billionaire:before {
+  content: "\e90b";
+}
+.icon-bills:before {
+  content: "\e90c";
+}
+.icon-bitcoin:before {
+  content: "\e90d";
+}
+.icon-blockchain:before {
+  content: "\e90e";
+}
+.icon-british-pound:before {
+  content: "\e90f";
+}
+.icon-budgeting:before {
+  content: "\e910";
+}
+.icon-calculator:before {
+  content: "\e911";
+}
+.icon-chargeback:before {
+  content: "\e912";
+}
+.icon-check:before {
+  content: "\e913";
+}
+.icon-chinese-yuan:before {
+  content: "\e914";
+}
+.icon-credit-card:before {
+  content: "\e915";
+}
+.icon-crowdfunding:before {
+  content: "\e916";
+}
+.icon-cryptocurrency:before {
+  content: "\e917";
+}
+.icon-cvv:before {
+  content: "\e918";
+}
+.icon-cyber-identity:before {
+  content: "\e919";
+}
+.icon-data-mining:before {
+  content: "\e91a";
+}
+.icon-deposit:before {
+  content: "\e91b";
+}
+.icon-dollar:before {
+  content: "\e91c";
+}
+.icon-education-savings:before {
+  content: "\e91d";
+}
+.icon-email-transfer:before {
+  content: "\e91e";
+}
+.icon-emergency-fund:before {
+  content: "\e91f";
+}
+.icon-euro:before {
+  content: "\e920";
+}
+.icon-exchange:before {
+  content: "\e921";
+}
+.icon-funds-transfer:before {
+  content: "\e922";
+}
+.icon-gazelle:before {
+  content: "\e923";
+}
+.icon-gold:before {
+  content: "\e924";
+}
+.icon-growth:before {
+  content: "\e925";
+}
+.icon-handshake:before {
+  content: "\e926";
+}
+.icon-home-loan:before {
+  content: "\e927";
+}
+.icon-identity-theft:before {
+  content: "\e928";
+}
+.icon-income:before {
+  content: "\e929";
+}
+.icon-insurance:before {
+  content: "\e92a";
+}
+.icon-interest-rates:before {
+  content: "\e92b";
+}
+.icon-internet-banking:before {
+  content: "\e92c";
+}
+.icon-internet-of-things:before {
+  content: "\e92d";
+}
+.icon-investment:before {
+  content: "\e92e";
+}
+.icon-japanese-yen:before {
+  content: "\e92f";
+}
+.icon-leasing:before {
+  content: "\e930";
+}
+.icon-management:before {
+  content: "\e931";
+}
+.icon-mobile-banking:before {
+  content: "\e932";
+}
+.icon-money-bag:before {
+  content: "\e933";
+}
+.icon-money-growth:before {
+  content: "\e934";
+}
+.icon-money-making:before {
+  content: "\e935";
+}
+.icon-money:before {
+  content: "\e936";
+}
+.icon-monitoring:before {
+  content: "\e937";
+}
+.icon-p2p-lending:before {
+  content: "\e938";
+}
+.icon-payment:before {
+  content: "\e939";
+}
+.icon-piggy-bank:before {
+  content: "\e93a";
+}
+.icon-planning:before {
+  content: "\e93b";
+}
+.icon-profit:before {
+  content: "\e93c";
+}
+.icon-report:before {
+  content: "\e93d";
+}
+.icon-retirement-savings:before {
+  content: "\e93e";
+}
+.icon-revenue:before {
+  content: "\e93f";
+}
+.icon-saas:before {
+  content: "\e940";
+}
+.icon-safe-box:before {
+  content: "\e941";
+}
+.icon-savings:before {
+  content: "\e942";
+}
+.icon-secure:before {
+  content: "\e943";
+}
+.icon-sharing-economy:before {
+  content: "\e944";
+}
+.icon-statistics:before {
+  content: "\e945";
+}
+.icon-stocks:before {
+  content: "\e946";
+}
+.icon-strategy:before {
+  content: "\e947";
+}
+.icon-success:before {
+  content: "\e948";
+}
+.icon-taxes:before {
+  content: "\e949";
+}
+.icon-transfer:before {
+  content: "\e94a";
+}
+.icon-unicorn:before {
+  content: "\e94b";
+}
+.icon-value:before {
+  content: "\e94c";
+}
+.icon-wallet:before {
+  content: "\e94d";
+}

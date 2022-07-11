@@ -1,0 +1,927 @@
+/* -- Responsive Stylesheet
+--------------------------------------------- -- */
+
+/* -- Custom Animations
+------------------------------------------  -- */
+
+/*-- Spinning loader animation --*/
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* -- Animation- fadeInUp -- */
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+/* -- Ripple out effect -- */
+
+@-webkit-keyframes ripple-out {
+	100% {
+		top: -12px;
+		right: -12px;
+		bottom: -12px;
+		left: -12px;
+		opacity: 0;
+	}
+}
+
+@keyframes ripple-out {
+	100% {
+		top: -12px;
+		right: -12px;
+		bottom: -12px;
+		left: -12px;
+		opacity: 0;
+	}
+}
+
+.ripple-out:hover:before,
+.ripple-out:focus:before,
+.ripple-out:active:before {
+	-webkit-animation-name: ripple-out;
+	animation-name: ripple-out;
+}
+
+/* -- Animation fadeIn-- */
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1301px) {
+	.container {
+		max-width: 1230px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	#fp-nav {
+		right: 5% !important;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.c-onepage-navbar li {
+		margin-left: 2rem;
+	}
+	.roadmap-box .o-common-card::after {
+		width: 155px;
+	}
+	.roadmap-box .o-common-card {
+		max-width: 280px;
+	}
+	.o-roadmap .o-common-card::before {
+		right: -170px;
+	}
+	.o-roadmap .roadmap-right .o-common-card::before {
+		left: -170px;
+	}
+	.o-purchased-tokens .sparks.spark-1 {
+		left: 202px;
+	}
+	.o-purchased-tokens .sparks.spark-2 {
+		left: 252px;
+	}
+	.o-purchased-tokens .sparks.spark-3 {
+		left: 600px;
+	}
+	.o-purchased-tokens .sparks.spark-4 {
+		left: 862px;
+	}
+	.o-purchased-tokens .sparks.spark-5 {
+		left: 348px;
+	}
+	.o-purchased-tokens .sparks.spark-6 {
+		left: 600px;
+	}
+	.o-purchased-tokens .sparks.spark-7 {
+		left: 793px;
+	}
+	.o-purchased-tokens .sparks.spark-8 {
+		left: 968px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.c-onepage-navbar li {
+		margin-left: 1rem;
+	}
+	.roadmap-box .o-common-card::after {
+		width: 90px;
+	}
+	.o-roadmap .o-common-card::before {
+		right: -98px;
+	}
+	.o-roadmap .roadmap-right .o-common-card::before {
+		left: -98px;
+	}
+	.o-purchased-tokens .sparks.spark-1 {
+		left: 114px;
+		top: 35px;
+	}
+	.o-purchased-tokens .sparks.spark-2 {
+		left: 164px;
+		top: 104px;
+	}
+	.o-purchased-tokens .sparks.spark-3 {
+		left: 512px;
+		top: 72px;
+	}
+	.o-purchased-tokens .sparks.spark-4 {
+		left: 774px;
+		top: 5px;
+	}
+	.o-purchased-tokens .sparks.spark-5 {
+		left: 260px;
+		top: 265px;
+	}
+	.o-purchased-tokens .sparks.spark-6 {
+		left: 703px;
+		top: 135px;
+	}
+	.o-purchased-tokens .sparks.spark-7 {
+		left: 510px;
+		top: 235px;
+	}
+	.o-purchased-tokens .sparks.spark-8 {
+		left: 878px;
+		top: 338px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.o-benifits p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.o-coins span,
+	.o-currencies span {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	html {
+		font-size: 8px;
+	}
+	.navbar-nav {
+		background: #1a1391;
+		padding: 3rem 5rem 5rem;
+		margin-top: 4rem;
+		border: 1px solid #0d086a;
+	}
+	.c-onepage-navbar {
+		padding: 20px 0;
+	}
+	.c-onepage-navbar li a:not(.btn)::before {
+		display: none;
+	}
+	.c-onepage-navbar li a {
+		line-height: 5rem;
+	}
+	.c-onepage-navbar li a.btn {
+		margin: 2.5rem 0 2rem;
+		width: 100%;
+	}
+	.c-onepage-navbar li a:not(.btn):hover {
+		opacity: .6;
+	}
+	.o-roadmap::after {
+		left: 20px;
+	}
+	.roadmap-box .o-common-card {
+		margin-left: 50px;
+		margin-bottom: 50px;
+	}
+	.roadmap-box.roadmap-right .o-common-card {
+		margin-left: 50px;
+	}
+	.roadmap-box.roadmap-right {
+		padding-right: 0;
+	}
+	.roadmap-box .o-common-card::after {
+		left: auto;
+		right: 102%;
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	.o-roadmap .o-common-card::before,
+	.o-roadmap .roadmap-right .o-common-card::before {
+		right: auto;
+		left: -84px;
+		height: calc(100% + 50px);
+	}
+	.roadmap-box::before,
+	.roadmap-box::after,
+	.roadmap-box.active::after {
+		left: 20px;
+	}
+	.fp-table,
+	.fp-tableCell,
+	.fp-scrollable {
+		height: auto !important;
+	}
+	.section {
+		padding: 64px 0 30px;
+	}
+	.o-benifits {
+		margin-bottom: 30px;
+	}
+	.o-common-nav-tab {
+		position: initial;
+		margin-bottom: 50px;
+	}
+	.c-onepage-product .o-common-nav-tab {
+		top: 0;
+	}
+	.c-onepage-product .tab-pane [class^="col-"] {
+		margin-bottom: 30px;
+	}
+	.c-onepage-banner {
+		padding: 160px 0 60px;
+		display: block !important;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.c-onepage-banner .c-onepage-clients {
+		position: initial;
+		margin-top: 100px;
+	}
+	.o-roadmap {
+		padding-bottom: 0;
+	}
+	.c-onepage-about,
+	.c-onepage-team,
+	.o-purchased-tokens,
+	.o-currency-converter,
+	.o-bitcoin-widget,
+	.o-token-distribution {
+		height: auto;
+	}
+	.o-token-distribution {
+		padding: 60px 0 0;
+	}
+	.o-purchased-tokens {
+		padding: 100px 0;
+	}
+	.o-purchased-tokens::before {
+		background-size: 100%;
+	}
+	.team-tab .o-common-nav-tab {
+		margin-top: 30px;
+	}
+	.team-tab .tab-content,
+	.benifits-content .tab-content,
+	.product-tab .tab-content {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.team-tab .o-common-card {
+		margin-bottom: 30px;
+	}
+	.c-onepage-token {
+		padding: 0;
+	}
+	p.section-subtitle {
+		margin-bottom: 5.1rem;
+	}
+	.onepage-about-us {
+		padding: 0;
+	}
+	.token-distribution-chart {
+		height: 400px;
+	}
+	.o-converter-tab .tab-content {
+		padding-top: 0;
+	}
+	.onepage-converter.o-common-card {
+		margin-bottom: 45px;
+	}
+	.converted-price {
+		margin-bottom: 50px;
+	}
+	.o-best-price-box {
+		margin-bottom: 30px;
+		height: auto;
+	}
+	.o-bitcoin-widget .btcwdgt-headlines.btcwdgt-light {
+		margin-bottom: 30px !important;
+	}
+	.o-blog-wrapper .btn {
+		margin: 40px 0 30px;
+	}
+	.o-contact-info {
+		margin-bottom: 50px;
+		padding-left: 0;
+	}
+	.flipper .o-form-content {
+		padding-left: 0;
+	}
+	.o-form-content .o-form {
+		max-width: 100%;
+	}
+	.footer-content .c-onepage-clients {
+		margin-top: 0;
+		margin-bottom: 45px;
+	}
+	.c-onepage-footer {
+		padding: 12px 0 0;
+	}
+	.o-footer-nav {
+		padding: 20px 0;
+	}
+	.o-footer-bottom {
+		padding-top: 30px;
+	}
+	.o-credit-cards img {
+		margin-bottom: 20px;
+	}
+	.o-map {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.o-converter {
+		display: block;
+		text-align: center;
+	}
+	.o-coins,
+	.o-currencies {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.o-currencies {
+		margin-top: 20px;
+	}
+	.o-converter .input-group,
+	.o-converter input {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.o-converter .value-err {
+		width: 100%;
+	}
+	span.currency-sign {
+		margin-right: -.5rem;
+	}
+	.slick-dotted.slick-slider {
+		margin-bottom: 0;
+	}
+	.roadmap-box {
+		max-width: 400px;
+		margin: 0 auto;
+		padding-left: 50px;
+	}
+	.roadmap-box .o-common-card {
+		max-width: auto;
+	}
+	.roadmap-box .o-common-card::after,
+	.roadmap-box.roadmap-right .o-common-card::after {
+		width: 60px;
+		left: -80px;
+		right: auto;
+	}
+	.o-purchased-tokens .sparks.spark-1 {
+		left: 101px;
+		top: 40px;
+	}
+	.o-purchased-tokens .sparks.spark-2 {
+		left: 136px;
+		top: 90px;
+	}
+	.o-purchased-tokens .sparks.spark-3 {
+		left: 378px;
+		top: 66px;
+	}
+	.o-purchased-tokens .sparks.spark-4 {
+		left: 562px;
+		top: 19px;
+	}
+	.o-purchased-tokens .sparks.spark-5 {
+		left: 200px;
+		top: 209px;
+	}
+	.o-purchased-tokens .sparks.spark-6 {
+		left: 517px;
+		top: 115px;
+	}
+	.o-purchased-tokens .sparks.spark-7 {
+		left: 381px;
+		top: 186px;
+	}
+	.o-purchased-tokens .sparks.spark-8 {
+		left: 640px;
+		top: 260px;
+	}
+	.progressbar-block .progress {
+		margin: 0 auto 16px;
+	}
+	.o-distribution {
+		text-align: center !important;
+	}
+	.amcharts-chart-div {
+		max-width: 100%;
+	}
+	.o-purchased-tokens {
+		margin: 0;
+		min-height: 540px;
+		padding: 60px 0;
+	}
+	.o-contact-block {
+		margin: 0;
+	}
+	.o-common-card.o-newsletter-form {
+		text-align: center;
+	}
+	.o-common-card.o-newsletter-form h4 {
+		margin-bottom: 10px;
+	}
+	.o-common-card.o-newsletter-form p {
+		margin-bottom: 25px;
+	}
+	.o-common-card.o-newsletter-form .o-newsletter {
+		margin: 0 0 10px;
+	}
+	.o-newsletter-form-content {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.o-common-nav-tab {
+		bottom: 5.1rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.section {
+		padding: 18px 0 30px;
+	}
+	h2,
+	.o-details-with-title h2,
+	.big-heading {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h3 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	p {
+		font-size: 16px;
+	}
+	br {
+		display: none;
+	}
+	.banner-poly-bg-1,
+	.banner-poly-bg-2,
+	.banner-poly-bg-3 {
+		bottom: 0 !important;
+	}
+	.banner-poly-bg-3 .sparks.spark-2 {
+		top: 16%;
+		left: 35.5%;
+	}
+	.banner-poly-bg-3 .sparks.spark-3 {
+		top: 45%;
+		left: 56.2%;
+	}
+	.banner-poly-bg-3 .sparks.spark-4 {
+		top: -10%;
+		left: 74.5%;
+	}
+	.banner-poly-bg-3 .sparks.spark-5 {
+		top: 22%;
+		left: 85.5%;
+	}
+	.team-tab .nav li a {
+		min-width: 15rem;
+	}
+	.banner {
+		height: auto;
+	}
+	.banner-txt {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.countdown-box {
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.slick-slider {
+		max-width: 540px;
+	}
+	.slick-list {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.token-slider .token-box h4 {
+		text-align: center;
+	}
+	.c-onepage-banner .c-onepage-clients {
+		margin-bottom: 30px;
+	}
+	.partners .partners-logo {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.o-common-nav-tab .nav .nav-link {
+		width: auto;
+	}
+	.c-onepage-banner .fp-scrollable,
+	.c-onepage-banner .fp-scroller {
+		display: block;
+	}
+	.o-coins span,
+	.o-currencies span {
+		font-size: 14px;
+		padding: 0 5px;
+	}
+	.converted-price {
+		font-size: 3rem;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header h2,
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header h4,
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header p.changes,
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header .stats,
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header p.date-wrap {
+		width: 100% !important;
+		position: initial !important;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header .stats,
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header p.date-wrap {
+		height: auto !important;
+		left: 0 !important;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header .stats {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-around;
+		-moz-justify-content: space-around;
+		-ms-justify-content: space-around;
+		justify-content: space-around;
+		-ms-flex-pack: space-around;
+		padding: 15px 0 !important;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header .stats>div {
+		padding: 0 10px !important;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header {
+		height: auto !important;
+		background: transparent !important;
+		padding: 0 !important;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header h2 {
+		height: 60px !important;
+		line-height: 50px !important;
+	}
+	.o-blog-content {
+		margin-bottom: 30px;
+	}
+	.c-onepage-modal .modal-dialog {
+		margin: 30px auto;
+	}
+	.c-onepage-modal .modal-body .modal-heading {
+		font-size: 3rem;
+		line-height: 4.2rem;
+		margin-bottom: 2rem;
+	}
+	.c-onepage-product .tab-pane [class^="col-"] {
+		text-align: center !important;
+	}
+	.c-onepage-product .tab-pane [class^="col-"] img {
+		padding: 0 30px 50px;
+	}
+	.purchase-number span {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.token-distribution-chart {
+		height: 250px;
+	}
+	.o-newsletter-form p {
+		margin-bottom: 15px;
+	}
+	.o-newsletter-form .o-form .o-newsletter {
+		margin: 0 -10px;
+	}
+	.o-newsletter-form .o-form .o-newsletter .btn {
+		margin: 20px 0 0;
+	}
+	.footer-widget {
+		margin-bottom: 30px;
+	}
+	.o-footer-bottom,
+	.o-terms-privacy {
+		text-align: left !important;
+	}
+	.o-follow-us,
+	.o-footer-bottom p {
+		margin-bottom: 5px;
+	}
+	.o-newsletter-form .o-newsletter {
+		margin-left: -15px;
+	}
+	.o-newsletter-form .o-newsletter .btn {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	.c-onepage-about,
+	.c-onepage-team,
+	.o-purchased-tokens,
+	.o-currency-converter,
+	.o-bitcoin-widget,
+	.o-token-distribution {
+		height: auto;
+	}
+	.c-onepage-roadmap,
+	.c-onepage-product {
+		height: auto;
+	}
+	.o-common-nav-tab.nav-bottom {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.c-onepage-product .tab-pane [class^="col-"] {
+		margin-bottom: 0;
+	}
+	.onepage-about-us {
+		padding-top: 0;
+	}
+	.fullpage-scroller .c-onepage-roadmap {
+		padding: 20px 0 0 !important;
+	}
+	.c-onepage-token {
+		padding-top: 0 !important;
+	}
+	.c-onepage-footer {
+		padding: 0 0 10px;
+	}
+	.footer-content .c-onepage-clients {
+		margin-bottom: 40px;
+	}
+	.o-footer-bottom {
+		padding-bottom: 25px;
+	}
+	.o-blog-wrapper .btn {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	#clock div span {
+		width: 6rem;
+		font-size: 3rem;
+		line-height: 6.7rem;
+		height: 6rem;
+	}
+	.o-bitcoin-widget .btcwdgt-chart .btcwdgt-header .stats div span {
+		font-size: 16px !important;
+	}
+	.c-onepage-banner {
+		padding-top: 120px;
+		display: block !important;
+		padding-bottom: 0;
+	}
+	.o-purchased-tokens {
+		min-height: auto;
+	}
+	.o-roadmap .o-common-card::before,
+	.o-roadmap .roadmap-right .o-common-card::before {
+		left: -44px;
+	}
+	.roadmap-box .collapse-txt {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.roadmap-box .o-common-card {
+		margin-bottom: 40px;
+	}
+	.c-onepage-banner .c-onepage-clients {
+		margin-top: 26px;
+	}
+	.section .scroll-to-next {
+		display: none;
+	}
+	.navbar-nav .nav-link.active {
+		color: #8f5eff;
+	}
+	.o-newsletter-form-content .o-common-card {
+		margin-bottom: 30px;
+	}
+	.o-terms-privacy a:first-child,
+	.o-footer-bottom a:first-child {
+		margin-left: 0;
+	}
+	.o-newsletter-form .o-newsletter input {
+		margin-bottom: 2rem;
+	}
+	.o-about-us .img-container {
+		margin-right: 0;
+	}
+	.benifits-content .tab-pane .row div[class^="col-"]:last-child .o-benifits,
+	.o-roadmap .row div[class^="col-"]:last-child .o-common-card,
+	.o-best-prices .row div[class^="col-"]:last-child .o-best-price-box,
+	.o-bitcoin-widget .btcwdgt-headlines.btcwdgt-light,
+	.flip-container {
+		margin-bottom: 0 !important;
+	}
+	.product-tab .o-details-with-title p {
+		margin-bottom: 0;
+	}
+	.o-about-us,
+	.o-contact-block {
+		margin-top: 0;
+	}
+	.o-currency-converter {
+		padding-top: 0;
+	}
+	.o-token-distribution {
+		padding-bottom: 0;
+	}
+	.navbar-nav {
+		max-height: 450px;
+		overflow-y: auto;
+	}
+	.countdown-box+.radial-bg {
+		z-index: -1;
+	}
+	.o-credit-cards img {
+		margin-right: 10px;
+	}
+	.common-list {
+		padding-left: 18px;
+	}
+	.common-list li {
+		list-style-position: initial;
+	}
+	.o-newsletter-form-content {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	h1 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	.banner {
+		padding-top: 17rem;
+	}
+	.banner .img-container {
+		padding-top: 2rem;
+	}
+	.footer-bottom {
+		display: block;
+		text-align: center;
+	}
+	.dropdown {
+		display: inline-block;
+	}
+	.c-onepage-modal .modal-body {
+		padding: 3.5rem 3.5rem .7rem;
+	}
+	.c-onepage-modal .modal-body .close {
+		top: 5px;
+		right: 5px;
+	}
+	.roadmap-box {
+		padding-left: 10px;
+	}
+	.roadmap-box .o-common-card::after,
+	.roadmap-box.roadmap-right .o-common-card::after {
+		width: 45px;
+		left: -45px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.partners .partners-logo {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+		margin-bottom: 3rem;
+	}
+	.o-purchased-tokens .sparks.spark-1 {
+		left: 56px;
+		top: 90px;
+	}
+	.o-purchased-tokens .sparks.spark-2 {
+		left: 76px;
+		top: 110px;
+	}
+	.o-purchased-tokens .sparks.spark-3 {
+		left: 193px;
+		top: 101px;
+	}
+	.o-purchased-tokens .sparks.spark-4 {
+		left: 284px;
+		top: 75px;
+	}
+	.o-purchased-tokens .sparks.spark-5 {
+		left: 106px;
+		top: 170px;
+	}
+	.o-purchased-tokens .sparks.spark-6 {
+		left: 262px;
+		top: 120px;
+	}
+	.o-purchased-tokens .sparks.spark-7 {
+		left: 195px;
+		top: 160px;
+	}
+	.o-purchased-tokens .sparks.spark-8 {
+		left: 322px;
+		top: 195px;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.btn-play {
+		margin-right: 3rem;
+	}
+}
+
+/* -- IE Hacks -- */
+
+@media screen and (min-width: 0\0) {
+	.o-benifits i,
+	.o-common-card:hover h5 i,
+	.o-follow-us a:hover i {
+		background: transparent;
+	}
+	.o-common-card .img-container p {
+		display: block;
+	}
+}
